@@ -4,7 +4,7 @@ export const initialState = {
   playlists: [],
   // spotify: null,
   // discover_weekly: null,
-  // top_artists: null,
+  top_artists: null,
   playing: false,
   item: null,
 };
