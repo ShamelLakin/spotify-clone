@@ -1,12 +1,16 @@
 .login {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 }
 
 .login > img {
-    width: 100%;
+  width: 100%;
 }
 
-.login {
-    
+.login > a {
+  padding: 20px;
+  border-radius: 99px;
+  background-color: #1db954;
+  font-weight: 800;
+  color: white;
 }
