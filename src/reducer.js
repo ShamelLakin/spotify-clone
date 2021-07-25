@@ -13,7 +13,9 @@ console.log(action);
             return {
                 ...state,
                 user: action.user
-            }
+        }
+        default: 
+        return state;
     }
 }
 
