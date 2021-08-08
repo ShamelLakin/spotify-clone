@@ -23,7 +23,6 @@ function App() {
         type: "SET_TOKEN",
         token: _token
       })
-      // setToken(_token);
 
       spotify.setAccessToken(_token);
 
@@ -33,9 +32,16 @@ function App() {
           user: user,
         });
       });
+
+      spotify.getUserPlaylists().then((playlists) => {
+        dispatch({
+          type: "SET_PLAYLISTS",
+          playlists: playlists,
+        });
+      });
     }
 
-    console.log("I HAVE A TOKEN", token);
+    // console.log("I HAVE A TOKEN", token);
   }, []);
 
 
