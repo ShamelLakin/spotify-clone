@@ -18,11 +18,10 @@ function App() {
     const _token = hash.access_token;
 
     if (_token) {
-
       dispatch({
         type: "SET_TOKEN",
-        token: _token
-      })
+        token: _token,
+      });
 
       spotify.setAccessToken(_token);
 
@@ -40,12 +39,13 @@ function App() {
         });
       });
     }
-
-    // console.log("I HAVE A TOKEN", token);
   }, []);
 
-
-  return <div className="app">{token ? <Player spotify={spotify} /> : <Login />}</div>;
+  return (
+    <div className="app">
+      {token ? <Player spotify={spotify} /> : <Login />}
+    </div>
+  );
 }
 
 export default App;
