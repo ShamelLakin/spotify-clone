@@ -31,7 +31,7 @@ const reducer = (state, action) => {
     case "SET_DISCOVER_WEEKLY":
       return {
         ...state,
-        taste: action.taste,
+        discover_weekly: action.discover_weekly,
       };
     default:
       return state;
