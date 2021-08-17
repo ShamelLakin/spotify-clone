@@ -3,12 +3,13 @@ export const initialState = {
   playlists: [],
   playing: false,
   item: null,
-  token: "48eec709cdf6410dba69289ee3f744a7",
+  // token: "48eec709cdf6410dba69289ee3f744a7",
 };
 
 const reducer = (state, action) => {
   console.log(action);
 
+  // Action => type, [payload]
   switch (action.type) {
     case "SET_USER":
       return {

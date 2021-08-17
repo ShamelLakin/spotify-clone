@@ -4,17 +4,14 @@ import Header from "./Header";
 import "./styles/Body.css";
 
 function Body({ spotify }) {
-const [{ discover_weekly }, dispatch] = useDataLayerValue
+  const [{ discover_weekly }, dispatch] = useDataLayerValue();
 
   return (
     <div className="body">
       <Header spotify={spotify} />
 
       <div className="body__info">
-        <img
-          src={discover_weekly?.images[0].url}
-          alt=""
-        />
+        <img src={discover_weekly?.images[0].url} alt="" />
         <div className="body__infoText">
           <strong>PLAYLIST</strong>
           <h2>Discover Weekly</h2>
