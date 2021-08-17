@@ -18,7 +18,14 @@ function Body({ spotify }) {
           <p>{discover_weekly?.description}</p>
         </div>
       </div>
+      <div className="body__songs">
+    <div classname="body__icons">
+
     </div>
+      {/* List of Songs */}
+      </div>
+    </div>
+   
   );
 }
 
