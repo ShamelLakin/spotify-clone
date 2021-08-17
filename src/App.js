@@ -9,7 +9,7 @@ import { useDataLayerValue } from "./DataLayer";
 const spotify = new SpotifyWebApi();
 
 function App() {
-// const [token, setToken] = useState(null);
+  // const [token, setToken] = useState(null);
   const [{ token }, dispatch] = useDataLayerValue();
 
   useEffect(() => {
@@ -37,6 +37,13 @@ function App() {
           playlists: playlists,
         });
       });
+
+      spotify.getPlaylist("37i9dQZF1DWSUur0QPPsOn").then((response) =>
+        dispatch({
+          type: "SET_DISCOVER_WEEKLY",
+          discover_weekly: response,
+        })
+      );
     }
   }, []);
 
