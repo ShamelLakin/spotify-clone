@@ -19,13 +19,10 @@ function Body({ spotify }) {
         </div>
       </div>
       <div className="body__songs">
-    <div classname="body__icons">
-
-    </div>
-      {/* List of Songs */}
+        <div classname="body__icons"></div>
+        {/* List of Songs */}
       </div>
     </div>
-   
   );
 }
 
