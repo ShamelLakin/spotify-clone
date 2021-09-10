@@ -10,7 +10,6 @@ import Login from "./Login";
 const spotify = new SpotifyWebApi();
 
 function App() {
-  const [token, setToken] = useState(null);
   const [{ token }, dispatch] = useDataLayerValue();
 
   useEffect(() => {
