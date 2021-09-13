@@ -8,7 +8,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 
 function Body({ spotify }) {
-  const [{ discover_weekly }, dispatch] = useDataLayerValue();
+  const [{ discover_weekly }] = useDataLayerValue();
 
   return (
     <div className="body">
@@ -24,7 +24,7 @@ function Body({ spotify }) {
       </div>
 
       <div className="body__songs">
-        <div classname="body__icons">
+        <div className="body__icons">
           <PlayCircleFilledIcon className="body__shuffle" />
           <FavoriteIcon fontSize="large" />
           <MoreHorizIcon />
